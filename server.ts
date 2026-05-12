@@ -65,6 +65,28 @@ async function startServer() {
     }
   });
 
+  app.post('/api/leads', async (req, res) => {
+    try {
+      const { email, name, interest, interactionLogs } = req.body;
+      const db = getPrisma();
+      if (!db) return res.status(503).json({ error: 'Database connection not configured' });
+
+      const lead = await db.userLead.create({
+        data: { 
+          email, 
+          name, 
+          interest, 
+          interactionLogs: JSON.stringify(interactionLogs) 
+        }
+      });
+
+      res.status(201).json({ success: true, lead });
+    } catch (error) {
+      console.error('Lead saving error:', error);
+      res.status(500).json({ error: 'Failed to save lead' });
+    }
+  });
+
   // Vite middleware for development
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({

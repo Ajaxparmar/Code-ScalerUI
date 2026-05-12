@@ -23,7 +23,7 @@ const solutions = [
     title: 'Digital Transformation',
     description: 'Automate legacy processes with modern cloud solutions and AI-driven workflows designed for industrial scale.',
     icon: <Zap className="w-8 h-8" />,
-    color: 'emerald'
+    color: 'indigo'
   }
 ];
 
@@ -53,7 +53,7 @@ export default function IndustrialSolutions({ theme }: IndustrialSolutionsProps)
               For Industries & Startups
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight">
-              Scaling Businesses with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400 font-serif italic">Precision Engineering</span>
+              Scaling Businesses with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 font-serif italic">Precision Engineering</span>
             </h2>
             <p className={`text-lg mb-10 leading-relaxed ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
               Beyond education, we are your strategic technology partners. We help industries transition from legacy systems to modern, scalable web and mobile solutions that drive real business growth.
@@ -67,8 +67,8 @@ export default function IndustrialSolutions({ theme }: IndustrialSolutionsProps)
                 'Seamless integration with your existing CRM/ERP'
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center">
-                    <ShieldCheck className="w-4 h-4 text-emerald-500" />
+                  <div className="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <ShieldCheck className="w-4 h-4 text-purple-500" />
                   </div>
                   <span className={`text-sm font-medium ${theme === 'dark' ? 'text-slate-300' : 'text-slate-900'}`}>{item}</span>
                 </div>
@@ -96,7 +96,7 @@ export default function IndustrialSolutions({ theme }: IndustrialSolutionsProps)
                 <div className={`w-16 h-16 rounded-3xl mb-6 flex items-center justify-center ${
                    solution.color === 'indigo' ? 'bg-indigo-500/10 text-indigo-500' :
                    solution.color === 'purple' ? 'bg-purple-500/10 text-purple-500' :
-                   'bg-emerald-500/10 text-emerald-500'
+                   'bg-indigo-500/10 text-indigo-500'
                 }`}>
                   {solution.icon}
                 </div>
@@ -122,7 +122,7 @@ export default function IndustrialSolutions({ theme }: IndustrialSolutionsProps)
             ].map((stat, i) => (
               <div key={i}>
                 <div className="text-4xl font-black text-indigo-500 mb-2">{stat.value}</div>
-                <div className={`text-xs font-bold uppercase tracking-widest ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+                <div className={`text-xs font-bold uppercase tracking-widest ${theme === 'dark' ? 'text-slate-500' : 'text-slate-600'}`}>
                   {stat.label}
                 </div>
               </div>

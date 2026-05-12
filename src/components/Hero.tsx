@@ -73,9 +73,9 @@ export default function Hero({ theme }: HeroProps) {
             Accelerate Your Learning
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 flex flex-wrap items-center gap-x-4">
-            <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>Master</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 mt-4">
+            <span className={`block ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Master</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 block min-h-[1.2em]">
               {text}
               <span className="animate-pulse ml-1 inline-block w-1 md:w-2 h-10 md:h-16 bg-indigo-500 align-middle"></span>
             </span>
@@ -114,7 +114,7 @@ export default function Hero({ theme }: HeroProps) {
                 />
               ))}
             </div>
-            <p className={`text-sm font-medium ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+            <p className={`text-sm font-medium ${theme === 'dark' ? 'text-slate-500' : 'text-slate-600'}`}>
               Join <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>10,000+</span> ambitious learners
             </p>
           </div>

@@ -1,6 +1,6 @@
 {
   "name": "Code Scaler",
   "description": "CodeScaler: The best coding education and industrial internship platform in Haryana. Providing expert-led courses and hands-on internships in Jind, Hisar, and surrounding areas for college students to scale their tech careers.",
-  "requestFramePermissions": [],
+  "requestFramePermissions": ["microphone"],
   "majorCapabilities": []
 }

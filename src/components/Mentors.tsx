@@ -49,7 +49,7 @@ export default function Mentors({ theme }: MentorProps) {
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
             Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Mentors</span>
           </h2>
-          <p className={`text-lg max-w-2xl mx-auto ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>
+          <p className={`text-lg max-w-2xl mx-auto ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
             Learn from the experts who have scale massive systems and led high-performance teams.
           </p>
         </div>

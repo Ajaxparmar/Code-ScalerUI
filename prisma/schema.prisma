@@ -25,3 +25,12 @@ model InternshipApplication {
   semester  String
   createdAt DateTime @default(now())
 }
+
+model UserLead {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  email           String?
+  name            String?
+  interest        String?
+  interactionLogs String?  // JSON string of conversation
+  createdAt       DateTime @default(now())
+}

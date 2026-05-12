@@ -66,7 +66,7 @@ export default function CourseCarousel({ theme }: CourseCarouselProps) {
             <h2 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight">
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Courses</span>
             </h2>
-            <p className={`text-lg max-w-xl ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+            <p className={`text-lg max-w-xl ${theme === 'dark' ? 'text-slate-500' : 'text-slate-600'}`}>
               Handpicked courses curated by industry veterans to help you bridge the gap between theory and practical engineering.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function CourseCarousel({ theme }: CourseCarouselProps) {
                 <div className={`relative h-48 overflow-hidden bg-gradient-to-br ${
                   i % 3 === 0 ? 'from-indigo-900 to-slate-900' : 
                   i % 3 === 1 ? 'from-purple-900 to-slate-900' : 
-                  'from-emerald-900 to-slate-900'
+                  'from-indigo-800 to-slate-900'
                 }`}>
                    <img
                     src={course.image}

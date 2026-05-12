@@ -59,7 +59,7 @@ export default function Footer({ theme }: FooterProps) {
                 />
                 <span className="text-2xl font-bold tracking-tight">CodeScaler</span>
               </div>
-              <p className={`mb-8 leading-relaxed ${theme === 'dark' ? 'text-slate-500' : 'text-slate-500'}`}>
+              <p className={`mb-8 leading-relaxed ${theme === 'dark' ? 'text-slate-500' : 'text-slate-600'}`}>
                 Empowering the next generation of software engineers with industry-vetted courses and a community-first approach to learning.
               </p>
               <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function Footer({ theme }: FooterProps) {
                     <a
                       href={link.href}
                       className={`text-sm font-medium transition-colors ${
-                        theme === 'dark' ? 'text-slate-500 hover:text-indigo-400' : 'text-slate-500 hover:text-indigo-600'
+                        theme === 'dark' ? 'text-slate-500 hover:text-indigo-400' : 'text-slate-600 hover:text-indigo-600'
                       }`}
                     >
                       {link.name}

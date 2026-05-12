@@ -12,6 +12,7 @@ import Internship from './components/Internship';
 import Mentors from './components/Mentors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import VoiceBot from './components/VoiceBot';
 import { Theme } from './types';
 import { motion, useScroll, useSpring } from 'motion/react';
 
@@ -116,6 +117,7 @@ export default function App() {
       </main>
 
       <Footer theme={theme} />
+      <VoiceBot theme={theme} />
     </div>
   );
 }

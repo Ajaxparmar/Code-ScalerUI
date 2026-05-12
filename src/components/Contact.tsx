@@ -77,7 +77,7 @@ export default function Contact({ theme }: ContactProps) {
               </div>
 
               <div className="flex items-start gap-6">
-                <div className="p-4 rounded-2xl bg-emerald-600/10 text-emerald-500">
+                <div className="p-4 rounded-2xl bg-indigo-600/10 text-indigo-500">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
@@ -100,7 +100,7 @@ export default function Contact({ theme }: ContactProps) {
                   exit={{ opacity: 0, scale: 0.9 }}
                   className="h-full flex flex-col items-center justify-center text-center space-y-4"
                 >
-                  <div className="w-20 h-20 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500">
+                  <div className="w-20 h-20 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-500">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h3 className="text-2xl font-bold">Message Sent!</h3>

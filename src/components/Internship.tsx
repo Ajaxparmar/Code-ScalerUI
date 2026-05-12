@@ -54,13 +54,13 @@ export default function Internship({ theme }: InternshipProps) {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-widest mb-6 border border-emerald-500/20">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-500 text-xs font-bold uppercase tracking-widest mb-6 border border-indigo-500/20">
               <Sparkles className="w-4 h-4" />
               Apply for Internship 2026
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tight leading-tight">
               Bridge the Gap <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">From College to Career</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">From College to Career</span>
             </h2>
             <p className={`text-lg mb-10 leading-relaxed ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
               CodeScaler's flagship internship program is designed specifically for students in **Jind, Hisar, and Rohtak (Haryana)**. We provide real industrial projects, mentorship from CEO Ajay Kumar and CTO Deepak Kumar, and certificates that matter.
@@ -89,7 +89,7 @@ export default function Internship({ theme }: InternshipProps) {
               theme === 'dark' ? 'bg-slate-950/50 border-slate-800' : 'bg-white border-slate-200'
             }`}>
               <h5 className="font-bold mb-3 flex items-center gap-2">
-                <ChevronRight className="w-4 h-4 text-emerald-500" />
+                <ChevronRight className="w-4 h-4 text-indigo-500" />
                 Why Choose CodeScaler Internship in Haryana?
               </h5>
               <p className="text-sm text-slate-500 leading-relaxed">
@@ -99,7 +99,7 @@ export default function Internship({ theme }: InternshipProps) {
           </div>
 
           <div className={`p-8 md:p-12 rounded-[3.5rem] border shadow-2xl transition-all ${
-            theme === 'dark' ? 'bg-slate-900 border-slate-800 shadow-emerald-950/20' : 'bg-white border-slate-200 shadow-slate-200/50'
+            theme === 'dark' ? 'bg-slate-900 border-slate-800 shadow-indigo-950/20' : 'bg-white border-slate-200 shadow-slate-200/50'
           }`}>
             <AnimatePresence mode="wait">
               {status === 'success' ? (
@@ -109,7 +109,7 @@ export default function Internship({ theme }: InternshipProps) {
                   exit={{ opacity: 0, scale: 0.9 }}
                   className="h-full flex flex-col items-center justify-center text-center py-12"
                 >
-                  <div className="w-24 h-24 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 mb-6">
+                  <div className="w-24 h-24 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-500 mb-6">
                     <CheckCircle2 className="w-12 h-12" />
                   </div>
                   <h3 className="text-3xl font-bold mb-4">Application Received!</h3>
@@ -127,7 +127,7 @@ export default function Internship({ theme }: InternshipProps) {
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                       placeholder="Your full name"
-                      className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-emerald-500 transition-all ${
+                      className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-indigo-500 transition-all ${
                         theme === 'dark' ? 'bg-slate-950 border-slate-800 text-white' : 'bg-slate-50 border-slate-200 text-slate-900 shadow-sm'
                       }`}
                     />
@@ -142,7 +142,7 @@ export default function Internship({ theme }: InternshipProps) {
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                         placeholder="email@example.com"
-                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-emerald-500 transition-all ${
+                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-indigo-500 transition-all ${
                           theme === 'dark' ? 'bg-slate-950 border-slate-800 text-white' : 'bg-slate-50 border-slate-200 text-slate-900 shadow-sm'
                         }`}
                       />
@@ -155,7 +155,7 @@ export default function Internship({ theme }: InternshipProps) {
                         value={formData.college}
                         onChange={(e) => setFormData({...formData, college: e.target.value})}
                         placeholder="CRSU / GJU / KU"
-                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-emerald-500 transition-all ${
+                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-indigo-500 transition-all ${
                           theme === 'dark' ? 'bg-slate-950 border-slate-800 text-white' : 'bg-slate-50 border-slate-200 text-slate-900 shadow-sm'
                         }`}
                       />
@@ -171,7 +171,7 @@ export default function Internship({ theme }: InternshipProps) {
                         value={formData.course}
                         onChange={(e) => setFormData({...formData, course: e.target.value})}
                         placeholder="B.Tech"
-                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-emerald-500 transition-all ${
+                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-indigo-500 transition-all ${
                           theme === 'dark' ? 'bg-slate-950 border-slate-800 text-white' : 'bg-slate-50 border-slate-200 text-slate-900 shadow-sm'
                         }`}
                       />
@@ -184,7 +184,7 @@ export default function Internship({ theme }: InternshipProps) {
                         value={formData.semester}
                         onChange={(e) => setFormData({...formData, semester: e.target.value})}
                         placeholder="6th"
-                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-emerald-500 transition-all ${
+                        className={`w-full px-5 py-3.5 rounded-xl border outline-none focus:border-indigo-500 transition-all ${
                           theme === 'dark' ? 'bg-slate-950 border-slate-800 text-white' : 'bg-slate-50 border-slate-200 text-slate-900 shadow-sm'
                         }`}
                       />
@@ -193,7 +193,7 @@ export default function Internship({ theme }: InternshipProps) {
 
                   <button 
                     disabled={status === 'loading'}
-                    className="w-full py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2 mt-4 disabled:opacity-50"
+                    className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-indigo-900/30 flex items-center justify-center gap-2 mt-4 disabled:opacity-50"
                   >
                     {status === 'loading' ? 'Submitting...' : 'Apply Now'}
                     <ChevronRight className="w-5 h-5" />
